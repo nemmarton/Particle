@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "reszecske.h": "c",
+        "kiir.h": "c",
+        "stdlib.h": "c"
+    }
+}
