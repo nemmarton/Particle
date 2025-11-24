@@ -5,17 +5,17 @@
 #include "reszecske.h"
 
 int main() {
-    int n = 100;
-    double limit_x = 40.0;
-    double limit_y = 20.0;
+    int n = 50;
+    double limit_x = 140.0;
+    double limit_y = 40.0;
     double dt = 1;
 
     szimulacio* sim = szimulacio_csinal(n, limit_x, limit_y);
-    printf("Szimulacio letrehozva %zu reszecskevel a(z) %.2fx%.2f teruleten.\n", n, limit_x, limit_y);
+    //printf("Szimulacio letrehozva %zu reszecskevel a(z) %.2fx%.2f teruleten.\n", n, limit_x, limit_y);
     szimulacio_init(sim);
-    printf("Szimulacio inicializalva.\n");
+    //printf("Szimulacio inicializalva.\n");
 
-    kiiro* r = kiiro_csinal(sim, 80, 40);
+    kiiro* r = kiiro_csinal(sim, 80, 20);
 
     for(int step=0; step<55550; step++) {
         system("clear"); // Linux / Mac, Windows: "cls"
